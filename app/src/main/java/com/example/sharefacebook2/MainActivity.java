@@ -75,4 +75,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    //        btn_Share.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Drawable myDrawable  = img_book.getDrawable();
+//                Bitmap bitmap = ((BitmapDrawable) myDrawable).getBitmap();
+//                String text ="https://play.google.com/store/apps/details?id=com.mndevelop.sachnoi.audiobook&hl=vi";
+//                //sharing image
+//                try {
+//                    File file= new File(BookDetailActivity.this.getExternalCacheDir(), tensach+".jpg");
+//                    FileOutputStream fOut = new FileOutputStream(file);
+//                    bitmap.compress(Bitmap.CompressFormat.JPEG, 80, fOut);
+//                    fOut.flush();
+//                    fOut.close();
+//                    file.setReadable(true, false);
+//                    //sharing intent
+//                    Intent intent = new Intent(Intent.ACTION_SEND);
+//
+//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    intent.putExtra(Intent.EXTRA_SUBJECT, text);
+//                    intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+//                    intent.putExtra(Intent.EXTRA_TEXT, text);
+//                    intent.setType("image/png/text/plain");
+//
+//                    startActivity(Intent.createChooser(intent, "Chia sẻ"));
+//                } catch (FileNotFoundException e) {
+//                    e.printStackTrace();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
 }
